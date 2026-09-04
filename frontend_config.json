@@ -1,0 +1,27 @@
+{
+  "application": "Explainable Diabetic Retinopathy Screening",
+  "version": "1.0.0",
+  "model": "B0_CLASSWEIGHTED_FINETUNED_224",
+  "frontend": "Flask + HTML + CSS + JavaScript",
+  "routes": {
+    "/": "web interface",
+    "/health": "service health",
+    "/analyze": "multipart image inference"
+  },
+  "features": [
+    "image upload",
+    "image preview",
+    "image quality assessment",
+    "five-class DR prediction",
+    "confidence display",
+    "probability distribution",
+    "Grad-CAM metadata",
+    "screening disclaimer"
+  ],
+  "safety": {
+    "screening_only": true,
+    "not_a_diagnosis": true,
+    "clinical_review_required": true,
+    "quality_gate_advisory": true
+  }
+}
