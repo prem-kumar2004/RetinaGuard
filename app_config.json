@@ -1,0 +1,25 @@
+{
+  "model_path": "model/best_model.keras",
+  "image_dir": null,
+  "service_config": null,
+  "api_contract": null,
+  "quality_config": null,
+  "gradcam_config": null,
+  "model_name": "B0_CLASSWEIGHTED_FINETUNED_224",
+  "input_size": [
+    224,
+    224
+  ],
+  "class_names": {
+    "0": "No DR",
+    "1": "Mild",
+    "2": "Moderate",
+    "3": "Severe",
+    "4": "Proliferative"
+  },
+  "safety": {
+    "screening_only": true,
+    "diagnosis": false,
+    "clinical_review_required": true
+  }
+}
