@@ -1,0 +1,32 @@
+__pycache__/
+*.py[cod]
+*$py.class
+
+.venv/
+venv/
+env/
+ENV/
+
+.vscode/
+.idea/
+
+*.log
+
+.DS_Store
+Thumbs.db
+
+uploads/
+temp/
+tmp/
+
+.ipynb_checkpoints/
+
+.env
+.env.*
+
+# Python cache
+.pytest_cache/
+.mypy_cache/
+
+# Generated Grad-CAM / runtime files
+gradcam_outputs/
