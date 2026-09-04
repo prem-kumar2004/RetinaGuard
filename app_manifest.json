@@ -1,0 +1,40 @@
+{
+  "application": {
+    "name": "Explainable Diabetic Retinopathy Screening",
+    "version": "1.0.0",
+    "purpose": "screening_support_only"
+  },
+  "model": {
+    "name": "B0_CLASSWEIGHTED_FINETUNED_224",
+    "architecture": "EfficientNetB0",
+    "input_size": "224x224",
+    "classes": [
+      "No DR",
+      "Mild",
+      "Moderate",
+      "Severe",
+      "Proliferative"
+    ]
+  },
+  "pipeline": [
+    "image_upload",
+    "image_quality_assessment",
+    "dr_prediction",
+    "probability_distribution",
+    "gradcam_explanation",
+    "screening_result"
+  ],
+  "safety": {
+    "screening_support_only": true,
+    "not_a_diagnosis": true,
+    "clinical_review_required": true,
+    "quality_gate_advisory": true
+  },
+  "artifacts": {
+    "model": true,
+    "inference_service_config": true,
+    "api_contract": true,
+    "quality_gate_config": true,
+    "gradcam_config": true
+  }
+}
